@@ -1,0 +1,59 @@
+﻿body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+.c {
+    font-size: 2em;
+}
+.mainDiv {
+    box-shadow: 0 0 12px grey;
+    padding: 40px;
+    background-color: white;
+}
+.google_btn {
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: 6px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+.btn {
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 6px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+.input_fields {
+    width: 100%;
+    height: 23px;
+    border-radius: 3px;
+    border: 2px solid lightgray;
+}   
+h3 {
+    margin: 13px 0px 13px 0px;
+}
+fieldset {
+    margin: 13px 0px 13px 0px;
+}
+.pCenter {   
+    display: flex;
+    justify-content: center;
+}
+a {
+    display: flex;
+    justify-content: center;
+    color: dodgerblue;
+    text-decoration: none;
+}
+span {
+    color: dodgerblue;
+}

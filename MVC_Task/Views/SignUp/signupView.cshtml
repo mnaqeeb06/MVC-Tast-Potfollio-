@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "signupView";
+}
+
+
+<head>
+    <link rel="stylesheet" href="~/Content/signup_Style.css" type="text/css" asp-append-version="true" />
+    
+</head>
+
+<body>
+
+   
+
+       <div class="mainDiv">
+           <h1 class="c">Sign<span>Up</span></h1>
+           <form name="myForm" method="post" action="">
+               <button class="google_btn">
+                   Sign up with Google
+               </button>
+
+               <hr />
+               <h3>Name</h3>
+               <input class="input_fields" type="text" name="name" value="" placeholder="Enter your name" />
+
+               <h3>Age</h3>
+               <input class="input_fields" type="text" name="age" value="" placeholder="Enter your age" />
+
+
+               <h3>Email</h3>
+               <input class="input_fields" type="text" name="email" value="" placeholder="Enter your email" />
+
+               <fieldset>
+                   <legend>
+                       Which degree you have done
+                   </legend>
+                   <div>
+                       <input id="bacholors" name="bacholors" type="checkbox" />
+                       <label>bacholors</label>
+                   </div>
+                   <div>
+                       <input id="phd" name="phd" type="checkbox" />
+                       <label>PHD</label>
+                   </div>
+               </fieldset>
+
+
+               <label for="img">Upload Image</label>
+               <input type="file" id="imgg" name="fileImg" accept="image/*">
+               <br />
+               <h3>Password</h3>
+               <input class="input_fields" type="password" name="password" value="" placeholder="at least 8 characters" />
+
+               <br />
+               <br />
+               <div c_div>
+                   <input type="checkbox" name="name" value="nk" />
+                   <label>I agree with <span>Terms</span> and <span>Privacy</span> </label>
+               </div>
+               <br />
+               <button class="btn">
+                   SignUp
+               </button>
+               <hr />
+               <p class="pCenter">Already Have an account?</p>
+
+               @Html.ActionLink("Log in", "loginView", "LogIn")
+
+           </form>
+
+       </div>
+
+ 
+
+</body>
+

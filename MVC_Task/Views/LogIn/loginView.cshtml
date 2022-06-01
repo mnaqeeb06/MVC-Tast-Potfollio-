@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "loginView";
+}
+<head>   
+    <link rel="stylesheet" href="~/Content/login_style.css" type="text/css" />
+</head>
+<body>
+    <div class="mainDiv">
+        <h1 class="c">Log<span>In</span></h1>
+        <form name="myForm" method="post" action="">
+            <button class="google_btn">
+                Login with Google
+            </button>
+            <hr />
+            <h3>Email</h3>
+            <input class="input_fields" type="text" name="email" value="" placeholder="Enter your email" />
+            <h3>Password</h3>
+            <input class="input_fields" type="password" name="password" value="" placeholder="at least 8 characters" />
+            <br />
+            <br />
+            <button class="btn">
+                Log In
+            </button>
+            <hr />
+            <p class="pCenter">Have no account?</p>
+            @Html.ActionLink("Log in", "potfollioView", "potfillio" )
+        </form>
+    </div>
+</body>
+
+
+
